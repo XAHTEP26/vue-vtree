@@ -1,0 +1,38 @@
+{
+  "name": "vue-vtree",
+  "version": "0.1.0",
+  "description": "Universal tree component for Vue.js",
+  "main": "dist/v-tree.umd.js",
+  "module": "dist/v-tree.esm.js",
+  "unpkg": "dist/v-tree.min.js",
+  "browser": {
+    "./sfc": "src/components/VTree.vue"
+  },
+  "scripts": {
+    "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+    "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/v-tree.umd.js",
+    "build:es": "rollup --config build/rollup.config.js --format es --file dist/v-tree.esm.js",
+    "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/v-tree.min.js"
+  },
+  "devDependencies": {
+    "rollup": "^0.67.0",
+    "rollup-plugin-buble": "^0.19.4",
+    "rollup-plugin-vue": "^4.3.2",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XAHTEP26/vue-vtree.git"
+  },
+  "keywords": [
+    "vue",
+    "tree",
+    "component"
+  ],
+  "author": "Grigory Kovalenko <mail@kogri.ru> (https://kogri.ru/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/XAHTEP26/vue-vtree/issues"
+  },
+  "homepage": "https://github.com/XAHTEP26/vue-vtree#readme"
+}
