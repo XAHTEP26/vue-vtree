@@ -15,10 +15,10 @@
     "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/v-tree.min.js"
   },
   "devDependencies": {
-    "rollup": "^0.67.0",
-    "rollup-plugin-buble": "^0.19.4",
-    "rollup-plugin-vue": "^4.3.2",
-    "vue-template-compiler": "^2.5.17"
+    "rollup": "^0.67.4",
+    "rollup-plugin-buble": "^0.19.6",
+    "rollup-plugin-vue": "^4.7.2",
+    "vue-template-compiler": "^2.6.10"
   },
   "repository": {
     "type": "git",
@@ -34,5 +34,8 @@
   "bugs": {
     "url": "https://github.com/XAHTEP26/vue-vtree/issues"
   },
-  "homepage": "https://github.com/XAHTEP26/vue-vtree#readme"
+  "homepage": "https://github.com/XAHTEP26/vue-vtree#readme",
+  "dependencies": {
+    "rollup-plugin-commonjs": "^9.3.4"
+  }
 }
